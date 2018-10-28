@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,40 +9,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <a class="logo">
-          Логотип дизайн-студии Nerds
+  <header class="header">
+    <a class="logo">
+      Логотип дизайн-студии Nerds
+    </a>
+    <ul class="header__list">
+      <li class="header__item">
+        <a href="studio.html" class="header__link">
+          Студия
         </a>
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="studio.html" class="header__link">
-              Студия
-            </a>
-          </li>
-          <li class="header__item">
-            <a href="clients.html" class="header__link">
-              Клиенты
-            </a>
-          </li>
-          <li class="header__item">
-            <a href="store.html" class="header__link">
-              Магазин
-            </a>
-          </li>
-          <li class="header__item">
-            <a href="contacts.html" class="header__link">
-              Контакты
-            </a>
-          </li>
-        </ul>
-        <a href="cart.html" class="header__cart">
-          Корзина
+      </li>
+      <li class="header__item">
+        <a href="clients.html" class="header__link">
+          Клиенты
         </a>
-        <h1 class="header__caption">
-          Магазин готовых шаблонов
-        </h1>
-      </header>
-  
+      </li>
+      <li class="header__item">
+        <a href="store.html" class="header__link">
+          Магазин
+        </a>
+      </li>
+      <li class="header__item">
+        <a href="contacts.html" class="header__link">
+          Контакты
+        </a>
+      </li>
+    </ul>
+    <a href="cart.html" class="header__cart">
+      Корзина
+    </a>
+    <h1 class="header__caption">
+      Магазин готовых шаблонов
+    </h1>
+  </header>
+  <div class="wrapper">
+    <aside class="filter">
+      <form action="https://echo.htmlacademy.ru" class="filter__form filter-form">
+        <fieldset class="filter-form__group range">
+          <legend class="filter-form__caption">Стоимость</legend>
+          <div class="range__wrapper">
+            <span class="range__switcher range__switcher--left"></span>
+            <span class="range__line"></span>
+            <span class="range__switcher--right"></span>
+          </div>
+          <label for="range-value__begin" class="range__value">
+            От
+          </label>
+          <input type="text" id="range-value__begin" name="range-begin">
+          <label for="range-value__begin" class="range__value">
+            До
+          </label>
+          <input type="text" id="range-value__end" name="range-end">
+        </fieldset>
+        <fieldset class="filter-form__group grid">
+          <legend class="filter-form__caption">
+            Сетка:
+          </legend>
+          <label for="grid-adaptive" class="grid__type">
+            Адаптивная
+          </label>
+          <input type="radio" class="filter-form__input-radio" id="grid-adaptive" name="grid-type" value="adaptive"
+            checked>
+          <label for="grid-fix" class="grid-type">
+            Фиксированная
+          </label>
+          <input type="radio" class="filter-form__input-radio" id="grid-fix" name="grid-type" value="fix">
+          <label for="grid-responsive" class="grid__type">
+            Резиновая
+          </label>
+          <input type="radio" class="filter-form__input-radio" id="grid-responsive" name="grid-type" value="responsive">
+        </fieldset>
+        <fieldset class="filter-form__group">
+          <legend class="filter-form__caption">
+            Особенности:
+          </legend>
+          <label for="option-slider" class="options__name">
+            Слайдер
+          </label>
+          <input type="checkbox" class="options__input-checkbox" id="option-slider" name="option" value="slider"
+            checked>
+          <label for="option-features" class="options__name">
+            Блок преимуществ
+          </label>
+          <input type="checkbox" class="options__input-checkbox" id="option-features" name="option" value="features">
+          <label for="option-news" class="options__name">
+            Новости
+          </label>
+          <input type="checkbox" class="options__input-checkbox" id="option-news" name="option" value="news" checked>
+          <label for="option-galery" class="options__name">
+            Галерея
+          </label>
+          <input type="checkbox" class="options__input-checkbox" id="option-galery" name="option" value="galery">
+          <label for="option-cart" class="options__name">
+            Корзина
+          </label>
+          <input type="checkbox" class="options__input-checkbox" id="option-cart" name="option" value="cart">
+        </fieldset>
+        <button type="submit" class="filter-form__btn" value="Показать"></button>
+      </form>
+    </aside>
+    <main class="main">
+
+    </main>
+  </div>
+
 </body>
+
 </html>
