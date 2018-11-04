@@ -552,3 +552,145 @@ img {
   color: #444444;
   line-height: 22px;
 }
+
+/* Стилизация модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 73px 60px 84px 100px;
+  width: 960px;
+  min-height: 590px;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal__close-btn {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  border: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal__close-btn::before,
+.modal__close-btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fecccd;
+}
+
+.modal__close-btn::before {
+  transform: rotate(45deg);
+}
+
+.modal__close-btn::after {
+  transform: rotate(-45deg);
+}
+
+.modal__caption {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.modal__form {
+  margin-top: 50px;
+}
+
+.form-writeus {
+  width: 760px;
+}
+
+.form-writeus__fields-wrapper {
+  display: flex;
+  padding-bottom: 36px;
+}
+
+.form-writeus__field {
+  width: 360px;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.form-writeus__field:last-child {
+  margin-right: 0;
+}
+
+.form-writeus__name {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form-writeus__input {
+  width: 100%;
+  height: 50px;
+  margin-top: 12px;
+  padding: 18px 16px;
+  color: #000000;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+  box-sizing: border-box;
+}
+
+.form-writeus__input::placeholder {
+  opacity: 0.5;
+  color: #444444;
+}
+
+.form-writeus__textarea {
+  width: 100%;
+  height: 118px;
+  margin-top: 12px;
+  padding: 14px 15px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.form-writeus__textarea::placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.form-writeus__btn {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 47px;
+  padding: 17px 82px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  cursor: pointer;
+}

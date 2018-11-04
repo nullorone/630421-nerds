@@ -300,11 +300,17 @@
     </h2>
     <button type="button" class="modal__close-btn">Закрыть модальное окно</button>
     <form action="https://echo.htmlacademy.ru" class="modal__form form-writeus">
-      <label for="form-writeus__name-user" class="form-writeus__name">Ваше имя:</label>
-      <input type="text" class="form-writeus__input" id="form-writeus__name-user" name="name-user" placeholder="Имя Фамилия">
-      <label for="form-writeus__email-user" class="form-writeus__name">Ваш e-mail:</label>
-      <input type="email" class="form-writeus__input" id="form-writeus__email-user" name="email-user" placeholder="email@example.com">
-      <label for="form-writeus__feedback" class="form-writeus__textarea-heading">Текст письма:</label>
+      <div class="form-writeus__fields-wrapper">
+        <p class="form-writeus__field">
+          <label for="form-writeus__name-user" class="form-writeus__name">Ваше имя:</label>
+          <input type="text" class="form-writeus__input" id="form-writeus__name-user" name="name-user" placeholder="Имя Фамилия">
+        </p>
+        <p class="form-writeus__field">
+          <label for="form-writeus__email-user" class="form-writeus__name">Ваш e-mail:</label>
+          <input type="email" class="form-writeus__input" id="form-writeus__email-user" name="email-user" placeholder="email@example.com">
+        </p>
+      </div>
+      <label for="form-writeus__feedback" class="form-writeus__name">Текст письма:</label>
       <textarea name="feedback" id="form-writeus__feedback" cols="100" rows="10" class="form-writeus__textarea"
         placeholder="В свободной форме"></textarea>
       <button type="submit" class="form-writeus__btn" value="Отправить">Отправить</button>
