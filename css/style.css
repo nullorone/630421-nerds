@@ -126,10 +126,67 @@ img {
 
 /* Стилизует слайдер */
 .slider__list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: #eeeeee;
+  z-index: 2;
+}
+
+.slider-controls {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 88px;
+  height: 18px;
+}
+
+.slider__list-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  z-index: 3;
+}
+
+.slider-controls__btn {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 17px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slider-controls__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #c1c1c1;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.slide1-control::after {
+  display: block;
+}
+
+.slide2-control::after {
+  display: block;
+}
+
+.slide3-control::after {
+  display: block;
 }
 
 .slider__item {
