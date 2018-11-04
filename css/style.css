@@ -488,6 +488,10 @@ img {
   opacity: 0.2;
 }
 
+.clients__link:hover,
+.clients__link:focus {
+  opacity: 1;
+}
 /* Стилизация секции контактов */
 .contacts {
   padding-top: 80px;
