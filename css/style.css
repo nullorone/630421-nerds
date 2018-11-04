@@ -392,3 +392,27 @@ img {
   color: #283136;
   line-height: 18px;
 }
+
+/* Стилизация секции клиентов */
+.clients {
+  min-height: 182px;
+}
+
+.clients .container {
+  padding-top: 46px;
+  padding-bottom: 44px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.clients__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clients__link {
+  opacity: 0.2;
+}
