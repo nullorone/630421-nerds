@@ -4,7 +4,7 @@
   font-style: normal;
   font-display: swap;
   src: url("fonts/roboto.woff2") format("woff2"),
-        url("fonts/roboto.woff") format("woff");
+    url("fonts/roboto.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style: normal;
   font-display: swap;
   src: url("fonts/robotomedium.woff2") format("woff2"),
-        url("fonts/robotomedium.woff") format("woff");
+    url("fonts/robotomedium.woff") format("woff");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-style: normal;
   font-display: swap;
   src: url("fonts/robotobold.woff2") format("woff2"),
-        url("fonts/robotobold.woff") format("woff");
+    url("fonts/robotobold.woff") format("woff");
 }
 
 html {
@@ -70,4 +70,53 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+}
+
+/* Стилизация header */
+.header {
+  padding-top: 49px;
+  min-height: 355px;
+  background-color: #eeeeee;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  font-size: 0;
+  width: 160px;
+  height: 65px;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat; 
+  background-size: contain;
+}
+
+.header__list {
+  margin: 0;
+  margin-top: 34px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.header__link {
+  padding-bottom: 10px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.header__cart {
+  margin-top: 33px;
+  padding-left: 41px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
 }
