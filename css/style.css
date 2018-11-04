@@ -281,3 +281,114 @@ img {
 .features__item-btn--yellow {
   background-color: #efc84a;
 }
+
+/* СТилизует секцию about */
+.about {
+  padding-top: 40px;
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.about__info-wrapper {
+  width: 660px;
+}
+
+.about__caption {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.about__desc {
+  margin: 0;
+  margin-top: 35px;
+  color: #283136;
+}
+
+.about__list-caption {
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  position: relative;
+  margin-bottom: 27px;
+  padding-left: 35px;
+  color: #283136;
+}
+
+.about__item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  background-color: #fb565a;
+  transform: translateY(-2px);
+}
+
+.about__result-wrapper {
+  margin-left: 140px;
+}
+
+.logo-color {
+  width: 360px;
+  height: 208px;
+}
+
+.about__result-desc {
+  margin: 0;
+  margin-top: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__result-list {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.results__item {
+  position: relative;
+}
+
+.results__item-num {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.results__item sup {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.results__item-desc {
+  margin: 0;
+  margin-top: 27px;
+  color: #283136;
+  line-height: 18px;
+}
