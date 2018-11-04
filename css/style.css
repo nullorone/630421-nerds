@@ -488,3 +488,67 @@ img {
   border-radius: 5px;
   text-transform: uppercase;
 }
+
+/* Стилизация футера */
+.footer {
+  padding-top: 69px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.socials {
+  margin: 0;
+  margin-right: 140px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 12px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.socials__link--vk {
+  background-image: url("../img/icon-vk.svg");
+}
+
+.socials__link--fb {
+  background-image: url("../img/icon-fb.svg");
+}
+
+.socials__link--insta {
+  background-image: url("../img/icon-insta.svg");
+}
+
+.footer__promo-caption {
+  margin: 0;
+  padding: 0;
+  margin-top: 9px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.footer__promo-desc {
+  margin: 0;
+  margin-top: 12px;
+  color: #444444;
+  line-height: 22px;
+}
