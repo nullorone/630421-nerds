@@ -204,3 +204,11 @@ img {
   width: 759px;
   height: 411px;
 }
+
+.slide2 {
+  display: none;
+}
+
+.slide3 {
+  display: none;
+}
